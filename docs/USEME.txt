@@ -1,0 +1,290 @@
+
+--------- OBJECT BODY -----------
+// const OBJECT_BODY = {
+//   "regDate": "",
+//   "regCenter": "",
+//   "motivatedBy": "",
+//   "name": "",
+//   "dob": "",
+//   "gender": "",
+//   "bloodGroup": "",
+//   "rhType": "",
+//   "fatherSpouseName": "",
+//   "education": "",
+//   "occupation": "",
+//   "wbDonor": {
+//     "lastDonation": null,
+//     "nextDonation": null
+//   },
+//   "platletDonor": {
+//     "lastDonation": null,
+//     "nextDonation": null
+//   },
+//   "plasmaDonor": {
+//     "lastDonation": null,
+//     "nextDonation": null
+//   },
+//   "drcDonor": {
+//     "lastDonation": null,
+//     "nextDonation": null
+//   },
+//   "lastDonated": {
+//     "type": "",
+//     "lastDonation": "",
+//     "nextDonation": ""
+//   },
+//   "residentialAddress": {
+//     "address": "",
+//     "pincode": "",
+//     "door": "",
+//     "buildingName": "",
+//     "city": "",
+//     "postOffice": "",
+//     "area": "",
+//     "taluk": "",
+//     "district": "",
+//     "mobile": "",
+//     "email": "",
+//     "phone": ""
+//   },
+//   "officeAddress": {
+//     "address": "",
+//     "pincode": "",
+//     "door": "",
+//     "buildingName": "",
+//     "city": "",
+//     "postOffice": "",
+//     "area": "Kuniyamuthur",
+//     "taluk": "",
+//     "district": "",
+//     "phone": "",
+//     "email": "",
+//     "mobile": ""
+//   }
+// };
+----------------------------
+-------DATA FROM UPDATE FORM----------
+---------STATE AND PROPS--------------
+// interface IProps {
+//   data: {
+//     regDate: any,
+//     regCenter: any,
+//     motivatedBy: any,
+//     name: any,
+//     dob: any,
+//     gender: any,
+//     bloodGroup: any,
+//     rhType: any,
+//     fatherSpouseName: any,
+//     education: any,
+//     occupation: any,
+//     wbDonor: {
+//       lastDonation: any,
+//       nextDonation: any
+//     },
+//     platletDonor: {
+//       lastDonation: any,
+//       nextDonation: any
+//     },
+//     plasmaDonor: {
+//       lastDonation: any,
+//       nextDonation: any
+//     },
+//     drcDonor: {
+//       lastDonation: any,
+//       nextDonation: any
+//     },
+//     lastDonated: {
+//       type: any,
+//       lastDonation: any,
+//       nextDonation: any
+//     },
+//     residentialAddress: {
+//       address: any,
+//       pincode: any,
+//       door: any,
+//       buildingName: any,
+//       city: any,
+//       postOffice: any,
+//       area: any,
+//       taluk: any,
+//       district: any,
+//       mobile: any,
+//       email: any,
+//       phone: any
+//     },
+//     officeAddress: {
+//       address: any,
+//       pincode: any,
+//       door: any,
+//       buildingName: any,
+//       city: any,
+//       postOffice: any,
+//       area: any,
+//       taluk: any,
+//       district: any,
+//       phone: any,
+//       email: any,
+//       mobile: any
+//     }
+//   }
+// }
+// export interface IState{
+//     regDate: any | " ",
+//     regCenter: any | " ",
+//     motivatedBy: any | " ",
+//     name: any | " ",
+//     dob: any | " ",
+//     gender: any | " ",
+//     bloodGroup: any | " ",
+//     rhType: any | " ",
+//     fatherSpouseName: any | " ",
+//     education: any | " ",
+//     occupation: any | " ",
+//     wb_check: boolean,
+//     wbDonor_lastDonation: any | " ",
+//     wbDonor_nextDonation: any | " ",
+//     platlet_check: boolean,
+//     platletDonor_lastDonation: any | " ",
+//     platletDonor_nextDonation: any | " ",
+//     plasma_check: boolean,
+//     plasmaDonor_lastDonation: any | " ",
+//     plasmaDonor_nextDonation: any | " ",
+//     drc_check:boolean,
+//     drcDonor_lastDonation: any | " ",
+//     drcDonor_nextDonation: any | " ",
+//     lastDonated_type: any | " ",
+//     lastDonated_lastDonation: any | " ",
+//     lastDonated_nextDonation: any | " ",
+//     r_address: any | " ",
+//     r_pincode: any | " ",
+//     r_door: any | " ",
+//     r_buildingName: any | " ",
+//     r_city: any | " ",
+//     r_postOffice: any | " ",
+//     r_area: any | " ",
+//     r_taluk: any | " ",
+//     r_district: any | " ",
+//     r_mobile: any | " ",
+//     r_email: any | " ",
+//     r_phone: any | " ",
+//     o_address: any | " ",
+//     o_pincode: any | " ",
+//     o_door: any | " ",
+//     o_buildingName: any | " ",
+//     o_city: any | " ",
+//     o_postOffice: any | " ",
+//     o_area: any | " ",
+//     o_taluk: any | " ",
+//     o_district: any | " ",
+//     o_phone: any | " ",
+//     o_email: any | " ",
+//     o_mobile: any | " ",
+   
+// }
+--------------------------------
+-----------DUMP DATA -------------
+    // const filter = new Filter(
+    //   this.state.eligibility,
+    //   this.state.motivatedBy,
+    //   this.state.gender,
+    //   this.state.bloodGroup,
+    //   this.state.rhType,
+    //   this.state.postOffice,
+    //   this.state.donorType,
+    //   this.state.age_max,
+    //   this.state.age_min,
+    //   this.state.addressKeyword,
+    //   this.state.area
+    // );
+
+
+    ----filter making------
+    // interface FilterType {
+//     eligibility: any,
+//     motivatedBy?: any,
+//     gender?: any,
+//     bloodGroup?: any,
+//     rhType?: any,
+//     postOffice?: any,
+//     donorType?: any,
+//     age_max:any;
+//     age_min:any;
+//     addressKeyword?: any,
+//     area?: any,
+// };
+// function Filter(this:Filter,
+//   eligibility = false,
+//   motivatedBy: any,
+//   gender: any,
+//   bloodGroup: any,
+//   rhType: any,
+//   postOffice: any,
+//   donorType: any,
+//   age_max: any,
+//   age_min: any,
+//   addressKeyword: any,
+//   area: any){
+// this.eligibility = eligibility;
+// this.motivatedBy = motivatedBy;
+// this.gender = gender;
+// this.bloodGroup = bloodGroup;
+// this.rhType = rhType;
+// this.postOffice = postOffice;
+// this.age = {
+//   max: age_max,
+//   min: age_min
+// };
+// this.addressKeyword = addressKeyword;
+// this.area = area;
+// this.donorType = donorType;
+// }
+// class Filter<Filter> {
+//   constructor(
+//     eligibility = false,
+//     motivatedBy: any,
+//     gender: any,
+//     bloodGroup: any,
+//     rhType: any,
+//     postOffice: any,
+//     donorType: any,
+//     age_max: any,
+//     age_min: any,
+//     addressKeyword: any,
+//     area: any
+//   ) {
+// this.eligibility = eligibility;
+// this.motivatedBy = motivatedBy;
+// this.gender = gender;
+// this.bloodGroup = bloodGroup;
+// this.rhType = rhType;
+// this.postOffice = postOffice;
+// this.age = {
+//   max: age_max,
+//   min: age_min
+// };
+// this.addressKeyword = addressKeyword;
+// this.area = area;
+// this.donorType = donorType;
+//   }
+// }
+------------------------------
+
+
+search old method
+onClick: (event, rowData) => {
+              this.setState({setData : rowData, redirectTo:true});
+              console.log(event);
+              },
+------------------------------------DATA FROM data-------------
+  //             "bloodGroup": this.state.bloodGroup,
+  //             "rhType": this.state.rhType,
+  //             "age": {
+  //               "max": this.state.age_max,
+  //               "min": this.state.age_min
+  //             },
+  //             "gender": this.state.gender,
+  //             "area": this.state.area,
+  //             "postOffice": this.state.postOffice,
+  //             "address": this.state.addressKeyword,
+  //             "motivatedBy": this.state.motivatedBy

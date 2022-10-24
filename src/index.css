@@ -1,0 +1,160 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+/* TIP: Search by name of component */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto,sans-serif;
+}
+
+/* General */
+.fourInLine{
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+}
+.inputs{
+  margin-left: 15px !important;
+  margin-right:15px !important;
+  width: 200px !important;
+  margin-bottom: 10px !important;
+}
+.multiline{
+  height: 300px !important;
+}
+.center{
+  justify-content:center;
+  text-align:center;
+}
+.formGroup > *{
+  display: inline-block;
+}
+.input-container{
+display: grid;
+grid-template-columns: repeat(4,1fr); 
+grid-template-areas:
+"a a a b";
+}
+.input-inputs{
+grid-area: a;
+}
+.input-buttons{
+grid-area: b;
+justify-content: center;
+align-self: center;
+}
+.something-table{
+  width:800px;
+}
+
+a{
+  text-decoration: none;
+}
+/* Look up section */
+.lookup-inputs-container{
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 10px;
+  grid-template-areas: 
+  "i i i i b"
+  "t t t t t"
+}
+.box_options{
+  grid-area: i;
+}
+.box_buttons{
+  grid-area: b;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.box_table{
+  grid-area: t;
+  min-width:800px;
+}
+
+/* Search Section */
+.search-container{
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 10px;
+  grid-template-areas: 
+  "b h o d s"
+  "t t t t t"
+}
+.search-half-input{
+  grid-area: h;
+justify-content: center;
+align-content: center;
+text-align: center;
+}
+.search-inputs-box{
+grid-area: b;
+justify-content: center;
+align-content: center;
+text-align: center;
+}
+.search-donor-id{
+  grid-area: d;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.span-text{
+  grid-area: o;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.search-buttons-box{
+  grid-area: s;
+  justify-content: right;
+  align-content: right;
+  text-align: right;
+}
+.search-box_table{
+  grid-area: t;
+}
+/* Anaalytics Section */
+.charts-container{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 10px;
+  grid-template-areas: 
+  "e e b b b b"
+  "e e d d d d"
+  "c c d d d d"
+  "a a a a a a"  
+  ;
+}
+.abd{
+  grid-area: a;
+}
+.bg{
+  grid-area: b;
+}
+.awbd{
+  grid-area: d;
+}
+.mfbdr{
+  grid-area: c;
+}
+.style-chart-title{
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+.overview-cards{
+  padding: 10px;
+  color: whitesmoke;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 10px;
+  margin: 15px;
+}
+.overview-container{
+  width: 100%;
+  grid-area: e;
+}
